@@ -21,8 +21,9 @@ export const Activities = () => {
     // add each activity object's name to the activityHTML string while adding the state of data-type="activity" and the activity object's id and the activity's name
 
     activityHTML += `
-<li class="activity"
+<li class="activity options"
 data-type="activity"
+data-name=${activity.name}
 id=${activity.id}>
 ${activity.name}
 </li>
