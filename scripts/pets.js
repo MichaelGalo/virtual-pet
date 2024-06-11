@@ -21,12 +21,14 @@ export const Pets = () => {
   for (const pet of pets) {
     // add each pet object's name to the petHTML string while adding the state of data-type="pet" and the pet object's id and the pet's name
     petHTML += `
-<li class="pet options" 
-data-type="pet"
-data-ownerId=${pet.ownerId}  
-id=${pet.id}>
-${pet.name}
-</li>
+<div class="pets">
+  <li class="pet options" 
+    data-type="pet"
+    data-ownerId=${pet.ownerId}  
+    id=${pet.id}>
+    ${pet.name}
+  </li>
+</div>
 `;
   }
 

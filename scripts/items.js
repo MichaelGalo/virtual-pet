@@ -21,11 +21,13 @@ export const Items = () => {
   for (const item of items) {
     // add each item object's name to the itemHTML string while adding the state of data-type="item" and the item object's id and the item's name
     itemHTML += `
-<li class="item options" 
-data-type="item"  
-id=${item.id}>
-${item.name}
-</li>
+<div class="items">
+  <li class="item options" 
+    data-type="item"  
+    id=${item.id}>
+    ${item.name}
+  </li>
+</div>
 `;
   }
 
