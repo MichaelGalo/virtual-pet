@@ -15,22 +15,22 @@ document.addEventListener("click", (clickEvent) => {
 // create a function to render the pets to the DOM and returning an HTML template string
 export const Pets = () => {
   // declare a variable set to an empty string named petHTML
-  let petHTML = "";
+  let petHTML = `<div class="pets">`;
 
   // use a for...of loop to iterate over the pets array and return the pet object
   for (const pet of pets) {
     // add each pet object's name to the petHTML string while adding the state of data-type="pet" and the pet object's id and the pet's name
     petHTML += `
-<div class="pets">
-  <li class="pet options" 
+  <button class="pet options" 
     data-type="pet"
     data-ownerId=${pet.ownerId}  
     id=${pet.id}>
     ${pet.name}
-  </li>
-</div>
+  </button>
 `;
   }
+
+  petHTML += `</div>`;
 
   // return the petHTML string
   return petHTML;

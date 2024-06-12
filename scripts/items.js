@@ -15,21 +15,21 @@ document.addEventListener("click", (clickEvent) => {
 // create a function to render the items to the DOM and returning an HTML template string
 export const Items = () => {
   // declare a variable set to an empty string named itemHTML
-  let itemHTML = "";
+  let itemHTML = `<div class="items">`;
 
   // use a for...of loop to iterate over the items array and return the item object
   for (const item of items) {
     // add each item object's name to the itemHTML string while adding the state of data-type="item" and the item object's id and the item's name
     itemHTML += `
-<div class="items">
   <li class="item options" 
     data-type="item"  
     id=${item.id}>
     ${item.name}
   </li>
-</div>
 `;
   }
+
+  itemHTML += `</div>`;
 
   // return the itemHTML string
   return itemHTML;
