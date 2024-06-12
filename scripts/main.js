@@ -15,7 +15,11 @@ const renderOptions = () => {
   const items = Items();
   const activities = Activities();
 
-  optionsContainer.innerHTML = `${pets} ${items} ${activities}`;
+  optionsContainer.innerHTML = `
+  ${pets}
+  ${items}
+  ${activities}
+  `;
 };
 
 renderOptions();

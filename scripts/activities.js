@@ -15,22 +15,22 @@ document.addEventListener("click", (clickEvent) => {
 // create a function to render the activities to the DOM and returning an HTML template string
 export const Activities = () => {
   // declare a variable set to an empty string named activityHTML
-  let activityHTML = "";
+  let activityHTML = `<div class="activities">`;
   // use a for...of loop to iterate over the activities array and return the activity object
   for (const activity of activities) {
     // add each activity object's name to the activityHTML string while adding the state of data-type="activity" and the activity object's id and the activity's name
 
     activityHTML += `
-<div class="activities">
   <li class="activity options"
     data-type="activity"
     data-name=${activity.name}
     id=${activity.id}>
     ${activity.name}
   </li>
-</div>
 `;
   }
+
+  activityHTML += `</div>`;
 
   // return the activityHTML string
   return activityHTML;

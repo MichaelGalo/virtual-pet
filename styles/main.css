@@ -52,7 +52,25 @@ h6 {
 }
 
 #options {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  display: flex;
+  justify-content: space-between; /* Space between columns */
+  gap: 20px; /* Space between columns */
+  flex-grow: 1;
+}
+
+.pets,
+.items,
+.activities {
+  display: flex;
+  flex-direction: column; /* Stack items within each column vertically */
+  flex-grow: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#selections {
+  display: flex;
+  justify-content: space-between; /* Space between columns */
+  gap: 20px; /* Space between columns */
+  flex-grow: 1;
 }
