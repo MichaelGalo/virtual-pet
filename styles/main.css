@@ -53,8 +53,8 @@ h6 {
 
 #options {
   display: flex;
-  justify-content: space-between; /* Space between columns */
-  gap: 20px; /* Space between columns */
+  justify-content: space-between;
+  gap: 20px;
   flex-grow: 1;
 }
 
@@ -70,7 +70,48 @@ h6 {
 
 #selections {
   display: flex;
-  justify-content: space-between; /* Space between columns */
-  gap: 20px; /* Space between columns */
+  justify-content: space-between;
+  gap: 20px;
   flex-grow: 1;
+}
+
+/* Dropdown button styles */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #3a7ca5;
+}
+
+.dropbtn {
+  background-color: #81c3d7;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.activity-options:hover {
+  background-color: #3a7ca5;
+  color: white;
 }
