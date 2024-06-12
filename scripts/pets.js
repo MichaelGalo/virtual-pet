@@ -6,9 +6,10 @@ const pets = getPets();
 
 // create an event listener for the click event on the button with the data-type of pets
 document.addEventListener("click", (clickEvent) => {
-  if (clickEvent.target.id === "pets") {
-    const currentPet = clickEvent.target;
-    window.alert(`This pet's name is ${currentPet}`);
+  const currentPet = clickEvent.target;
+
+  if (currentPet.dataset.type === "pet") {
+    window.alert(`This pet's name is ${currentPet.dataset.name}`);
   }
 });
 
@@ -23,7 +24,8 @@ export const Pets = () => {
     petHTML += `
   <button class="pet options" 
     data-type="pet"
-    data-ownerId=${pet.ownerId}  
+    data-ownerId=${pet.ownerId}
+    data-name=${pet.name}  
     id=${pet.id}>
     ${pet.name}
   </button>
