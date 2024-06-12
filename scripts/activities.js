@@ -28,10 +28,7 @@ document.addEventListener("mouseover", (mouseEvent) => {
 document.addEventListener("click", (clickEvent) => {
   const currentActivity = clickEvent.target;
 
-  if (
-    currentActivity.dataset.type === "activity" &&
-    currentActivity.type === "dropdown"
-  ) {
+  if (currentActivity.dataset.type === "activity") {
     window.alert(`This activity is ${currentActivity.dataset.name}`);
   }
 });
