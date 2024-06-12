@@ -1,4 +1,3 @@
-// create database array of objects with pets, owners, items and activities1
 export const database = {
   pets: [
     { id: 1, name: "Buddy", ownerId: 1, species: "Dog" },
@@ -50,22 +49,18 @@ export const database = {
   ],
   activityLog: [],
 };
-// create a function to get all pets using the .map method
 export const getPets = () => {
   return database.pets.map((pet) => ({ ...pet }));
 };
 
-// create a function to get all owners using the .map method
 export const getOwners = () => {
   return database.owners.map((owner) => ({ ...owner }));
 };
 
-// create a function to get all items using the .map method
 export const getItems = () => {
   return database.items.map((item) => ({ ...item }));
 };
 
-// create a function to get all activities using the .map method
 export const getActivities = () => {
   return database.activities.map((activity) => ({ ...activity }));
 };
