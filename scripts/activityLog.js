@@ -10,7 +10,11 @@ const pets = getPets();
 // create a function to render the activityLog to the DOM and returning an HTML template string
 export const ActivityLog = () => {
   // declare a variable set to an empty string named activityHTML
-  let activityHTML = "";
+  let activityHTML = `<div class="activityLog">`;
+
+  // loop through the selections array
+
+  activityHTML += `</div>`;
 
   // return the activityHTML string
   return activityHTML;
