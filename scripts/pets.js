@@ -18,7 +18,7 @@ export const Pets = () => {
   <button class="pet options" 
     data-type="pet"
     data-ownerId=${pet.ownerId}
-    data-name=${pet.name}  
+    data-name="${pet.name}"  
     id=${pet.id}>
     ${pet.name}
   </button>

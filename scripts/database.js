@@ -47,7 +47,88 @@ export const database = {
     { id: 9, name: "Vet Visit" },
     { id: 10, name: "Socialization" },
   ],
-  activityLog: [],
+  activityLog: [
+    {
+      id: 1,
+      petId: 1,
+      activityId: 1,
+      ownerId: 1,
+      itemId: 1,
+      date: "2021-07-01",
+    },
+    {
+      id: 2,
+      petId: 2,
+      activityId: 2,
+      ownerId: 2,
+      itemId: 2,
+      date: "2021-07-02",
+    },
+    {
+      id: 3,
+      petId: 3,
+      activityId: 3,
+      ownerId: 3,
+      itemId: 3,
+      date: "2021-07-03",
+    },
+    {
+      id: 4,
+      petId: 4,
+      activityId: 4,
+      ownerId: 4,
+      itemId: 4,
+      date: "2021-07-04",
+    },
+    {
+      id: 5,
+      petId: 5,
+      activityId: 5,
+      ownerId: 5,
+      itemId: 5,
+      date: "2021-07-05",
+    },
+    {
+      id: 6,
+      petId: 6,
+      activityId: 6,
+      ownerId: 6,
+      itemId: 6,
+      date: "2021-07-06",
+    },
+    {
+      id: 7,
+      petId: 7,
+      activityId: 7,
+      ownerId: 7,
+      itemId: 7,
+      date: "2021-07-07",
+    },
+    {
+      id: 8,
+      petId: 8,
+      activityId: 8,
+      ownerId: 8,
+      itemId: 8,
+      date: "2021-07-08",
+    },
+    {
+      id: 9,
+      petId: 9,
+      activityId: 9,
+      ownerId: 9,
+      itemId: 9,
+      date: "2021-07-09",
+    },
+    {
+      id: 10,
+      petId: 10,
+      activityId: 10,
+      ownerId: 10,
+      itemId: 10,
+      date: "2021-07-10",
+    },
+  ],
 };
 export const getPets = () => {
   return database.pets.map((pet) => ({ ...pet }));
@@ -65,4 +146,6 @@ export const getActivities = () => {
   return database.activities.map((activity) => ({ ...activity }));
 };
 
-// create a function to create an activity log based on the pet, item, owner and activity using the .map method
+export const getActivityLog = () => {
+  return database.activityLog.map((log) => ({ ...log }));
+};

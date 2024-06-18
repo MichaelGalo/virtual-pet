@@ -35,7 +35,7 @@ export const Activities = () => {
     activityHTML += `
   <a class="activity-options"
     data-type="activity"
-    data-name=${activity.name}
+    data-name="${activity.name}"
     id=${activity.id}>
     ${activity.name}
   </a>

@@ -44,3 +44,4 @@ const renderLog = () => {
 };
 
 // renderLog();
+logContainer.innerHTML = ActivityLog();

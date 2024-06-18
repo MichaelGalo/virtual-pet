@@ -18,7 +18,7 @@ export const Items = () => {
   <input type="radio"
   class="item options"
     data-type="item"
-    data-name=${item.name}  
+    data-name="${item.name}"  
     id=${item.id}>
     ${item.name}
   </input>
