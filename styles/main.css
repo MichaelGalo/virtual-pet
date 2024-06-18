@@ -23,39 +23,67 @@ h6 {
   letter-spacing: 2px;
 }
 
-.log-entry {
-  background-color: #f5f5f0;
-  border: 1px solid #d9d9d9;
-  border-radius: 6px;
-  padding: 20px;
-  margin-bottom: 20px;
-  transition: box-shadow 0.3s ease;
+main {
+  display: flex;
 }
 
-.log-entry:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+body {
+  height: 100vh;
 }
 
-.log-entry p {
-  margin: 0;
-  margin-bottom: 10px;
-  font-size: 16px;
-  line-height: 1.4;
+header {
+  display: flex;
+  margin-bottom: 5px;
+  text-align: center;
+  justify-content: center;
+  height: 10vh;
 }
 
-.log-entry strong {
-  font-weight: 600;
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  margin-top: 5px;
 }
 
-.log-entry:last-child {
-  margin-bottom: 0;
+#container {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 80vh;
+}
+
+#choices {
+  display: flex;
+  flex-direction: column;
+}
+
+#selections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+  box-sizing: border-box;
 }
 
 #options {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 20px;
   flex-grow: 1;
+  box-sizing: border-box;
+}
+
+#log {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 0;
+  height: 400px;
+  overflow-y: scroll;
+  height: 80vh;
 }
 
 .pets,
@@ -66,13 +94,6 @@ h6 {
   flex-grow: 1;
   padding: 10px;
   box-sizing: border-box;
-}
-
-#selections {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-grow: 1;
 }
 
 /* Dropdown button styles */
@@ -114,4 +135,35 @@ h6 {
 .activity-options:hover {
   background-color: #3a7ca5;
   color: white;
+}
+
+/* Activity Log Styles */
+
+.log-entry {
+  background-color: #f5f5f0;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+  /* width: 25%; */
+}
+
+.log-entry:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.log-entry p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.log-entry strong {
+  font-weight: 600;
+}
+
+.log-entry:last-child {
+  margin-bottom: 0;
 }
