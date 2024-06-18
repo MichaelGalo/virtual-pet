@@ -17,7 +17,7 @@ const activityLog = getActivityLog();
 // create a function to render the activityLog to the DOM and returning an HTML template string
 export const ActivityLog = () => {
   // declare a variable set to an empty string named activityHTML
-  let activityHTML = `<div class="activityLog">`;
+  let activityHTML = `<section class="activityLog">`;
 
   // loop through the selections array
   for (const log of activityLog) {
@@ -42,7 +42,7 @@ export const ActivityLog = () => {
     `;
   }
 
-  activityHTML += `</div>`;
+  activityHTML += `</section>`;
 
   // return the activityHTML string
   return activityHTML;
